@@ -16,7 +16,7 @@ else
 	echo "deluge killed"
 	sleep 30
 
-		nordvpn connect sg188
+		nordvpn connect
 
 		echo "Connected to NORD"
 
