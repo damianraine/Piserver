@@ -13,10 +13,11 @@ if [[ $(sudo nordvpn status) == *"Status: Connected"* ]]; then
 else
 
 	kill $(pgrep -f deluge-web)
+	kill $(pgrep -f deluged)
 	echo "deluge killed"
 	sleep 30
 
-		nordvpn connect
+		nordvpn connect p2p
 
 		echo "Connected to NORD"
 
